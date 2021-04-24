@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang ="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScriptの練習</title>
+    </head>
+    <body>
+        <script>
+        
+        const Dollar = 108;
+        const getDollarToYen = number => {
+            return number * Dollar;
+        };
+    
+         let c = 0;
+        while (c == 0) {
+        
+            let command = prompt('ドルを円に換算します。ドルを入力してください。');
+            
+            let check = isNaN(command);
+            
+            if(check == false)  {
+                   console.log(getDollarToYen(command) + '円です。');
+            }
+            
+            else {
+              console.log('数値を入力してください。');
+              c = 1;
+            }
+            
+            }
+        
+        </script>
+    </body>
+</html>
