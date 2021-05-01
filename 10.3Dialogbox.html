@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>ダイアログボックス</title>
         <style>
-        #dialog {
+        #koba {
             width: 250px;
             padding: 30px 20px;
             text-align: center;
@@ -14,7 +14,10 @@
         </style>
     </head>
     <body>
-        <form id="dialog" name="dialog">
+        <div id="matsu">
+            asdfasdf
+        </div>
+        <form id="koba" name="dialog">
             <p>ボタンをクリックしてください</p>
             <input type="button" name="yes" value="はい" />
             <input type="button" name="no" value="いいえ" />
@@ -22,6 +25,7 @@
         </form>
         
         <script>
+            const matsushita = document.getElementById('matsu');
             const form = document.forms.dialog;
             
             form.yes.addEventListener("click", () => {

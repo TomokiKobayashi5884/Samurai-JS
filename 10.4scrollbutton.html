@@ -20,7 +20,7 @@
                 background-color: #f88;
             }
             
-            .pagetop {
+            #top {
                 display: none;
                 
                 padding: 40px 10px;
@@ -33,6 +33,7 @@
                 bottom: 10px;
                 right: 10px;
             }
+            
         </style>
     </head>
     <body>
@@ -41,11 +42,14 @@
        <div class="screenBlue">3ページ目</div>
        <div class="screenRed">4ページ目</div>
        <div class="screenBlue">5ページ目</div>
-       
+
        <a class="pagetop" id="top" href="#">TOPに戻る</a>
        
        <script>
-           const topLink = document.getElementById("top");
+          const topLink = document.getElementById("top");
+        //   const topLink = document.getElementsByClassName("pagetop");
+           
+        //   console.log(document.getElementsByClassName("pagetop")[0]);
            
            window.addEventListener("scroll", () => {
                const scrollValue = document.scrollingElement.scrollTop;

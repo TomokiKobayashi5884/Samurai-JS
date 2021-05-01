@@ -12,7 +12,9 @@
             let count = 0;
             
             const timer = setInterval(() => {
-                h1.style.fontSize = count + `px`;
+                // h1.style.fontSize = count + `px`;
+                h1.style.fontSize = `${count}px`;
+                // h1.style.fontSize = count + "px";
                 count++;
                 
                 if (count >= 100) clearInterval(timer);

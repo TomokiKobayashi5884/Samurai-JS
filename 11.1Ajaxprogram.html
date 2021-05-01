@@ -20,7 +20,6 @@
            const createText = data => {
                
                h2.textContent = 'リポジトリの総数は、' + data.total_count + '件です'; 
-               
                document.body.appendChild(h2);
                
            };
@@ -32,7 +31,12 @@
                fetch(url)
                .then(data => data.json())
                .then(data => createText(data))
+               
+               
+               
            })
+           
+           
                
      
        </script>
